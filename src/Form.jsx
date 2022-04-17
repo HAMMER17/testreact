@@ -32,22 +32,22 @@ class Form extends Component {
 
         return (
             <form onSubmit={this.onFormSubmit}>
-                <label for="name">Name</label>
-                <input class="form-control mb-3"
+                <label htmlFor="name">Имя</label>
+                <input className="form-control mb-3"
                     type="text"
                     name="name"
                     id="name"
                     value={name}
                     onChange={this.handleChange} />
-                <label for="job">Job</label>
-                <input class="form-control mb-3"
+                <label htmlFor="job">Задание</label>
+                <input className="form-control mb-3"
                     type="text"
                     name="job"
                     id="job"
                     value={job}
                     onChange={this.handleChange} />
                 <button type="submit" className='btn btn-primary'>
-                    Submit
+                    Добавить
                 </button>
             </form>
         );
